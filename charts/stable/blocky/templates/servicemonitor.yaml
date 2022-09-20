@@ -1,4 +1,6 @@
 {{- if .Values.metrics.enabled }}
+{{- include "common.values.setup" . -}}
+---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -21,4 +23,19 @@ spec:
       scrapeTimeout: {{ . }}
       {{- end }}
       path: /metrics
+  {{- with .Values.metrics.serviceMonitor.jobLabel }}
+  jobLabel: {{ . }}
+  {{- end }}
+  {{- with .Values.metrics.serviceMonitor.targetLabels }}
+  targetLabels:
+    {{- range . }}
+    - {{ . }}
+    {{- end }}
+  {{- end}}
+  {{- with .Values.metrics.serviceMonitor.podTargetLabels }}
+  podTargetLabels:
+    {{- range . }}
+    - {{ . }}
+    {{- end }}
+  {{- end}}
 {{- end }}

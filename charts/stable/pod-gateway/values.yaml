@@ -11,12 +11,18 @@ image:
   # -- image pull policy of the gateway and inserted helper cotainers
   pullPolicy: IfNotPresent
   # -- image tag of the gateway and inserted helper containers
-  tag: v1.2.6
+  # @default -- chart.appVersion
+  tag:
 
 # -- IP address of the DNS server within the vxlan tunnel.
 # All mutated PODs will get this as their DNS server.
 # It must match VXLAN_GATEWAY_IP in settings.sh
 DNS: 172.16.0.1
+
+# -- The DNSPolicy to apply to the POD. Only when set to "None" will the
+# DNS value above apply. To avoid altering POD DNS (i.e., to allow
+# initContainers to use DNS before the the VXLAN is up), set to "ClusterFirst"
+DNSPolicy: None
 
 # -- cluster name used to derive the gateway full name
 clusterName: "cluster.local"
@@ -47,7 +53,7 @@ settings:
   # -- Prevent non VPN traffic to leave the gateway
   VPN_BLOCK_OTHER_TRAFFIC: false
   # -- If VPN_BLOCK_OTHER_TRAFFIC is true, allow VPN traffic over this port
-  VPN_TRAFFIC_PORT: 443
+  VPN_TRAFFIC_PORT: 1194
   # -- Traffic to these IPs will be send through the K8S gateway
   VPN_LOCAL_CIDRS: "10.0.0.0/8 192.168.0.0/16"
 
@@ -86,7 +92,7 @@ addons:
               cidr: 0.0.0.0/0
           ports:
           # VPN traffic (default OpenVPN)
-          - port: 443
+          - port: 1194
             protocol: UDP
         # Allow any traffic within k8s
         - to:
@@ -105,7 +111,7 @@ webhook:
     # -- image pullPolicy of the webhook
     pullPolicy: IfNotPresent
     # -- image tag of the webhook
-    tag: v3.3.2
+    tag: v3.5.0
 
   # -- number of webhook instances to deploy
   replicas: 1

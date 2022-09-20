@@ -1,3 +1,4 @@
+{{- include "common.values.setup" . -}}
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -15,7 +16,7 @@ data:
       server {
         listen 80;
         server_name _;
-        client_max_body_size 16M;
+        client_max_body_size {{ .Values.sidecar.config.client_max_body_size }};
         # serve media files
         location /media/ {
           alias /media/;
@@ -27,6 +28,7 @@ data:
         # pass requests for dynamic content to gunicorn
         location / {
           proxy_set_header Host $host;
+          proxy_set_header REMOTE-USER $http_{{ .Values.sidecar.config.reverse_proxy_header_username }};
           proxy_pass http://localhost:8080;
         }
       }

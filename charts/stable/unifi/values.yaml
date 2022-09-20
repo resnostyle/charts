@@ -8,8 +8,8 @@
 image:
   # -- image repository
   repository: jacobalberty/unifi
-  # -- image tag
-  tag: v6.2.26
+  # @default -- chart.appVersion
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -35,6 +35,11 @@ env:
   # DB_URI:  # mongodb://unifi-mongodb:27017/unifi
   # STATDB_URI:  # mongodb://unifi-mongodb:27017/unifi_stat
   # DB_NAME:  # unifi
+
+# -- pod security context.
+# @default -- See below
+podSecurityContext:
+  fsGroup: 999
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml

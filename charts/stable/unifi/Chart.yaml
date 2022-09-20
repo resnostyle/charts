@@ -1,8 +1,9 @@
+---
 apiVersion: v2
-appVersion: v6.2.26
+appVersion: v7.1.68
 description: Ubiquiti Network's Unifi Controller
 name: unifi
-version: 4.4.0
+version: 5.1.2
 keywords:
   - ubiquiti
   - unifi
@@ -16,10 +17,14 @@ maintainers:
   - name: mcronce
     email: mike@quadra-tec.net
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.2.0
-- name: mongodb
-  version: 10.28.7
-  repository: https://charts.bitnami.com/bitnami
-  condition: mongodb.enabled
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+  - name: mongodb
+    version: 12.1.22
+    repository: https://charts.bitnami.com/bitnami
+    condition: mongodb.enabled
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

@@ -9,7 +9,8 @@ image:
   # -- image repository
   repository: haveagitgat/tdarr
   # -- image tag
-  tag: 2.00.10
+  # @default -- chart.appVersion
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -24,6 +25,12 @@ env:
   serverIP: 0.0.0.0
   # -- tdarr server listening port
   serverPort: "{{ .Values.service.main.ports.server.port }}"
+  # -- Allow override for the pre-compiled tdarr ffmpeg binary
+  ffmpegPath: ""
+  # -- Set the container user id
+  PUID: "1000"
+  # -- Set the container group id
+  PGID: "1000"
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
@@ -55,6 +62,8 @@ node:
     tag: 2.00.10
     # -- image pull policy
     pullPolicy: IfNotPresent
+  # -- Node resources
+  resources: {}
 
 # -- Configure persistence settings for the chart under this key.
 # @default -- See below
@@ -63,16 +72,22 @@ persistence:
   # @default -- See values.yaml
   config:
     enabled: false
-    mountpath: /app/configs
+    mountPath: /app/configs
 
   # -- Volume used for tdarr server database
   # @default -- See values.yaml
   data:
     enabled: false
-    mountpath: /app/server
+    mountPath: /app/server
 
   # -- Volume used for media libraries
   # @default -- See values.yaml
   media:
     enabled: false
-    mountpath: /media
+    mountPath: /media
+
+  # -- Volume used for shared storage. e.g. emptydir transcode
+  # @default -- See values.yaml
+  shared:
+    enabled: false
+    mountPath: /shared

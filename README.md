@@ -1,6 +1,10 @@
+# ⚠️ Deprecation and Archive Notice
+
+**This repo is being deprecated, please read [this issue](https://github.com/k8s-at-home/charts/issues/1761)**
+
 # Helm charts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-67-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://docs.k8s-at-home.com/)
@@ -103,6 +107,36 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://dangmai.net"><img src="https://avatars.githubusercontent.com/u/1305527?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dang Mai</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=dangmai" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/larivierec"><img src="https://avatars.githubusercontent.com/u/3633214?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christopher Larivière</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=larivierec" title="Code">💻</a></td>
+    <td align="center"><a href="https://Winston.Milli.ng"><img src="https://avatars.githubusercontent.com/u/6162814?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Winston R. Milling</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=wrmilling" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/pysen"><img src="https://avatars.githubusercontent.com/u/3030145?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arthur</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=pysen" title="Code">💻</a></td>
+    <td align="center"><a href="https://samip.dev"><img src="https://avatars.githubusercontent.com/u/1703002?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Skyler Mäntysaari</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=samip5" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/disconn3ct"><img src="https://avatars.githubusercontent.com/u/397465?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dis</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=disconn3ct" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rogerrum"><img src="https://avatars.githubusercontent.com/u/10350796?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roger Rumao</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=rogerrum" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/marcelloceschia"><img src="https://avatars.githubusercontent.com/u/203448?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcello Ceschia</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=marcelloceschia" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.carrierlost.net"><img src="https://avatars.githubusercontent.com/u/969721?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roberto Santalla</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=roobre" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.greghaskins.com"><img src="https://avatars.githubusercontent.com/u/285310?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Greg Haskins</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=greghaskins" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jlrgraham"><img src="https://avatars.githubusercontent.com/u/2184689?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jlrgraham</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=jlrgraham" title="Code">💻</a></td>
+    <td align="center"><a href="https://cronix.cc"><img src="https://avatars.githubusercontent.com/u/181302?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lukas Wingerberg</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=psych0d0g" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.djvg.net"><img src="https://avatars.githubusercontent.com/u/17107225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TheDJVG</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=TheDJVG" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rschoultz"><img src="https://avatars.githubusercontent.com/u/727834?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rickard Schoultz</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=rschoultz" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://taylorvories.com"><img src="https://avatars.githubusercontent.com/u/13934524?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Taylor Vories</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=tvories" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.jonathangazeley.com"><img src="https://avatars.githubusercontent.com/u/604595?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=djjudas21" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.b1-systems.de"><img src="https://avatars.githubusercontent.com/u/26167225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Johannes Kastl</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=johanneskastl" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.funkypenguin.co.nz"><img src="https://avatars.githubusercontent.com/u/1524686?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Young</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=funkypenguin" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bikram990"><img src="https://avatars.githubusercontent.com/u/6782131?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bikramjeet Singh</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=bikram990" title="Code">💻</a></td>
+    <td align="center"><a href="http://geraldwu.com"><img src="https://avatars.githubusercontent.com/u/22160945?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gerald Wu</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=geraldwuhoo" title="Code">💻</a></td>
+    <td align="center"><a href="http://ntrpigo.blogspot.com"><img src="https://avatars.githubusercontent.com/u/720492?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ivan Gregurić Ortolan</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=ntrp" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/lucacalcaterra"><img src="https://avatars.githubusercontent.com/u/879825?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Luca Calcaterra</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=lucacalcaterra" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Omar007"><img src="https://avatars.githubusercontent.com/u/5380079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omar Pakker</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=Omar007" title="Code">💻</a></td>
+    <td align="center"><a href="https://resume.frezbo.dev"><img src="https://avatars.githubusercontent.com/u/18496730?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Noel Georgi</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=frezbo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/lanquarden"><img src="https://avatars.githubusercontent.com/u/446743?v=4?s=100" width="100px;" alt=""/><br /><sub><b>lanquarden</b></sub></a><br /><a href="https://github.com/k8s-at-home/charts/commits?author=lanquarden" title="Code">💻</a></td>
   </tr>
 </table>
 
