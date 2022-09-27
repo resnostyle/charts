@@ -1,6 +1,5 @@
-# ⚠️ Deprecation and Archive Notice
 
-**This repo is being deprecated, please read [this issue](https://github.com/k8s-at-home/charts/issues/1761)**
+I'm not sure what this repo will become or if it will be maintained long-term, but I'm hoping to make some decent in the wake of k8s-at-home/charts closing. Open MRs and help build out the charts.
 
 # Helm charts
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -22,6 +21,7 @@ Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 Once Helm is set up properly, add the repo as follows:
 
 ```console
+@todo Setup chart pushing
 helm repo add k8s-at-home https://k8s-at-home.com/charts/
 ```
 
@@ -31,8 +31,8 @@ You can then run `helm search repo k8s-at-home` to see the charts.
 
 We have a few outlets for getting support with our projects:
 
-- Visit our [Docs](https://docs.k8s-at-home.com/).
-- Bugs or feature requests should be opened in an [issue](https://github.com/k8s-at-home/charts/issues/new/choose).
+- Visit our [Docs](https://docs.k8s-at-home.com/). @todo fork off docs
+- Bugs or feature requests should be opened in an [issue](https://github.com/resnostyle/charts/issues/new/choose).
 - Questions or comments should be discussed in our [Discord](https://discord.gg/sTMX7Vh) or via [Github discussions](https://github.com/k8s-at-home/organization/discussions).
 
 ## Contributing
