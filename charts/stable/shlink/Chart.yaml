@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.7.1
 description: A self-hosted and PHP-based URL shortener application with CLI and REST interfaces
 name: shlink
-version: 5.2.1
+version: 5.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - shlink
@@ -20,11 +20,11 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.9.8
+    version: 11.9.13
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 11.3.3
+    version: 11.3.5
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
