@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2022.5.4
 description: Home Assistant
 name: home-assistant
-version: 13.5.1
+version: 13.5.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -23,15 +23,15 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.9.8
+    version: 11.9.13
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 11.3.3
+    version: 11.3.5
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: influxdb
-    version: 5.4.6
+    version: 5.4.10
     repository: https://charts.bitnami.com/bitnami
     condition: influxdb.enabled
 annotations:
