@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.10
 description: Teedy is an open source, lightweight document management system for individuals and businesses.
 name: teedy
-version: 6.2.2
+version: 7.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - teedy
@@ -22,7 +22,7 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.9.13
+    version: 12.5.5
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
