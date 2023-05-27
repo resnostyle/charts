@@ -2,12 +2,12 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 image:
   # -- image repository
-  repository: ghcr.io/k8s-at-home/lidarr
+  repository: ghcr.io/bjw-s/lidarr
   # -- image tag
   tag: v1.0.0.2255
   # -- image pull policy

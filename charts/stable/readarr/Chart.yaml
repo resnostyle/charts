@@ -11,11 +11,11 @@ keywords:
   - usenet
   - AudioBooks
   - ebooks
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/readarr
 icon: https://readarr.com/img/logo.png
 sources:
   - https://github.com/Readarr/Readarr
-  - https://github.com/k8s-at-home/container-images
+  - https://github.com/bjw-s/container-images
 maintainers:
   - name: mcmarkj
     email: mark@markmcw.uk

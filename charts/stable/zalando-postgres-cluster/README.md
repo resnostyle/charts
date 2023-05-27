@@ -4,7 +4,7 @@
 
 Creates a postgres cluster using the Zalando Postgres operator and local storage
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/bjw-s/charts/issues/new/choose)**
 
 ## Source Code
 
@@ -21,9 +21,9 @@ Creates a postgres cluster using the Zalando Postgres operator and local storage
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://bjw-s.github.io/helm-charts/
+helm repo add bjw-s https://bjw-s.github.io/helm-charts/
 helm repo update
-helm install zalando-postgres-cluster k8s-at-home/zalando-postgres-cluster
+helm install zalando-postgres-cluster bjw-s/zalando-postgres-cluster
 ```
 
 ## Installing the Chart
@@ -31,7 +31,7 @@ helm install zalando-postgres-cluster k8s-at-home/zalando-postgres-cluster
 To install the chart with the release name `zalando-postgres-cluster`
 
 ```console
-helm install zalando-postgres-cluster k8s-at-home/zalando-postgres-cluster
+helm install zalando-postgres-cluster bjw-s/zalando-postgres-cluster
 ```
 
 ## Uninstalling the Chart
@@ -47,20 +47,20 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install zalando-postgres-cluster \
   --set env.TZ="America/New York" \
-    k8s-at-home/zalando-postgres-cluster
+    bjw-s/zalando-postgres-cluster
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install zalando-postgres-cluster k8s-at-home/zalando-postgres-cluster -f values.yaml
+helm install zalando-postgres-cluster bjw-s/zalando-postgres-cluster -f values.yaml
 ```
 
 ## Custom configuration
@@ -80,7 +80,7 @@ Features added by this wrapper:
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -94,7 +94,7 @@ Features added by this wrapper:
 | dumpBackup.schedule | string | `"@daily"` | Backup schedule for postgres dumps |
 | dumpBackup.subpath | string | `nil` | Persistent volume claim subpath for the backups @default: <subpathPrefix/<release-name> |
 | dumpBackup.subpathPrefix | string | `"backup/db"` | Persistent volume claim subpath prefix for the backups |
-| dumpBackup.type | string | `nil` | Sets the persistence type. Valid options are pvc, emptyDir, hostPath or custom. See [common chart persistence doc](https://github.com/k8s-at-home/library-charts/blob/main/charts/stable/common/values.yaml) |
+| dumpBackup.type | string | `nil` | Sets the persistence type. Valid options are pvc, emptyDir, hostPath or custom. See [common chart persistence doc](https://github.com/bjw-s/library-charts/blob/main/charts/stable/common/values.yaml) |
 | persistentVolumes.accessModes[0] | string | `"ReadWriteOnce"` |  |
 | persistentVolumes.annotations | object | `{}` |  |
 | persistentVolumes.hostPath | string | `nil` | Local path for the persistent volumes @default: <hostPathPrefix/<release-name> |
@@ -131,14 +131,14 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/zalando-postgres-cluster?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/bjw-s/zalando-postgres-cluster?modal=changelog)
 
 ## Support
 
-- See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
-- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
+- See the [Docs](https://docs.bjw-s.com/our-helm-charts/getting-started/)
+- Open an [issue](https://github.com/bjw-s/charts/issues/new/choose)
+- Ask a [question](https://github.com/bjw-s/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------
-Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/k8s-at-home/helm-docs/releases/v0.1.1)
+Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/bjw-s/helm-docs/releases/v0.1.1)

@@ -7,7 +7,7 @@ version: 3.3.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - seafile
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/seafile
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/seafile
 icon: https://manual.seafile.com/media/seafile-transparent-1024.png
 sources:
   - https://github.com/haiwen/seafile-docker

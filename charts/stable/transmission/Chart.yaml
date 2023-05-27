@@ -8,11 +8,11 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - transmission
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/transmission
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/transmission
 icon: https://raw.githubusercontent.com/transmission/transmission/main/extras/transmission-1920.jpg
 sources:
   - https://github.com/transmission/transmission
-  - https://github.com/k8s-at-home/container-images
+  - https://github.com/bjw-s/container-images
 maintainers:
   - name: ishioni
     email: helm@movishell.pl

@@ -38,7 +38,7 @@ jobs:
 
       - name: Install helm-docs
         run: |
-          wget -O /tmp/helm-docs.deb  https://github.com/k8s-at-home/helm-docs/releases/download/v0.1.1/helm-docs_0.1.1_Linux_x86_64.deb
+          wget -O /tmp/helm-docs.deb  https://github.com/bjw-s/helm-docs/releases/download/v0.1.1/helm-docs_0.1.1_Linux_x86_64.deb
           sudo dpkg -i /tmp/helm-docs.deb
 
       - name: Collect changes
@@ -64,9 +64,9 @@ jobs:
         with:
           file_pattern: charts/**/
           commit_message: "chore: Auto-update chart README [skip ci]"
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: bjw-s[bot]
+          commit_user_email: bjw-s[bot]@users.noreply.github.com
+          commit_author: bjw-s[bot] <bjw-s[bot]@users.noreply.github.com>
 
       - name: Save commit hash
         id: save-commit-hash
@@ -86,8 +86,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "k8s-at-home[bot]"
-          git config user.email "k8s-at-home[bot]@users.noreply.github.com"
+          git config user.name "bjw-s[bot]"
+          git config user.email "bjw-s[bot]@users.noreply.github.com"
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.1
@@ -132,7 +132,7 @@ jobs:
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: bjw-s[bot]
+          commit_user_email: bjw-s[bot]@users.noreply.github.com
+          commit_author: bjw-s[bot] <bjw-s[bot]@users.noreply.github.com>
           file_pattern: charts/README.md

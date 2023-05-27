@@ -7,7 +7,7 @@ version: 9.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - wallabag
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/wallabag
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/wallabag
 icon: "https://raw.githubusercontent.com/wallabag/logo/master/app-android/logo-app-android-icon-bg-white-512.png"
 sources:
   - https://github.com/wallabag/docker

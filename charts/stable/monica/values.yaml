@@ -2,7 +2,7 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 image:
@@ -26,7 +26,7 @@ env:
   # Must be 32 characters long exactly.
   # Use `php artisan key:generate` or `echo -n 'base64:'; openssl rand -base64 32` to generate a random key.
   # -- The URL of your application.
-  APP_URL: https://crm.k8s-at-home.com
+  APP_URL: https://crm.bjw-s.com
   # DB_HOST -- Database hostname
   # DB_DATABASE -- Database to connect to
   # DB_USERNAME -- Database username

@@ -4,12 +4,12 @@
 
 A tool to get statistics from Uptime Robot and log it into InfluxDB
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/bjw-s/charts/issues/new/choose)**
 
 ## Source Code
 
 * <https://github.com/trojanc/node-influx-uptimerobot>
-* <https://github.com/k8s-at-home/charts>
+* <https://github.com/bjw-s/charts>
 
 ## Requirements
 
@@ -21,9 +21,9 @@ A tool to get statistics from Uptime Robot and log it into InfluxDB
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://bjw-s.github.io/helm-charts/
+helm repo add bjw-s https://bjw-s.github.io/helm-charts/
 helm repo update
-helm install uptimerobot k8s-at-home/uptimerobot
+helm install uptimerobot bjw-s/uptimerobot
 ```
 
 ## Installing the Chart
@@ -31,7 +31,7 @@ helm install uptimerobot k8s-at-home/uptimerobot
 To install the chart with the release name `uptimerobot`
 
 ```console
-helm install uptimerobot k8s-at-home/uptimerobot
+helm install uptimerobot bjw-s/uptimerobot
 ```
 
 ## Uninstalling the Chart
@@ -47,20 +47,20 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install uptimerobot \
   --set env.TZ="America/New York" \
-    k8s-at-home/uptimerobot
+    bjw-s/uptimerobot
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install uptimerobot k8s-at-home/uptimerobot -f values.yaml
+helm install uptimerobot bjw-s/uptimerobot -f values.yaml
 ```
 
 ## Custom configuration
@@ -69,7 +69,7 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-All notable changes to this application Helm chart will be documented in this file but does not include changes from our common library. To read those click [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common#changelog).
+All notable changes to this application Helm chart will be documented in this file but does not include changes from our common library. To read those click [here](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common#changelog).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
@@ -111,9 +111,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Support
 
-- See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
-- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
+- See the [Docs](https://docs.bjw-s.com/our-helm-charts/getting-started/)
+- Open an [issue](https://github.com/bjw-s/charts/issues/new/choose)
+- Ask a [question](https://github.com/bjw-s/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------

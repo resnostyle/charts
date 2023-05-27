@@ -9,7 +9,7 @@ keywords:
   - searx
   - search engine
   - privacy
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/searx
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/searx
 icon: https://github.com/searx/searx/blob/master/searx/static/themes/simple/img/logo_searx_a.png?raw=true
 sources:
   - https://github.com/searx/searx
@@ -17,7 +17,7 @@ sources:
   - https://hub.docker.com/r/searx/searx
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
+    email: bjw-s@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts

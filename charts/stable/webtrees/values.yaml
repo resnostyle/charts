@@ -2,7 +2,7 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 image:
@@ -23,7 +23,7 @@ env:
   # -- webtrees localization setting
   LANG: "en-US"
   # -- Base URL of the installation, with protocol. This needs to be in the form of http://webtrees.example.com
-  BASE_URL: https://webtrees.k8s-at-home.com
+  BASE_URL: https://webtrees.bjw-s.com
   # -- Database server type
   DB_TYPE: "mysql"
   # -- Database hostname

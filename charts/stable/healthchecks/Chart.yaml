@@ -8,14 +8,14 @@ keywords:
   - cron
   - monitoring
   - alert
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/healthchecks
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/healthchecks
 icon: https://raw.githubusercontent.com/healthchecks/healthchecks/master/stuff/logo.svg?raw=true
 sources:
   - https://github.com/healthchecks/healthchecks
   - https://hub.docker.com/r/linuxserver/healthchecks
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
+    email: bjw-s@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts

@@ -4,12 +4,12 @@
 
 Admision controller to change the default gateway and DNS server of PODs
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/bjw-s/charts/issues/new/choose)**
 
 ## Source Code
 
-* <https://github.com/k8s-at-home/gateway-admision-controller>
-* <https://github.com/k8s-at-home/pod-gateway>
+* <https://github.com/bjw-s/gateway-admision-controller>
+* <https://github.com/bjw-s/pod-gateway>
 
 ## Requirements
 
@@ -24,9 +24,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://bjw-s.github.io/helm-charts/
+helm repo add bjw-s https://bjw-s.github.io/helm-charts/
 helm repo update
-helm install pod-gateway k8s-at-home/pod-gateway
+helm install pod-gateway bjw-s/pod-gateway
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install pod-gateway k8s-at-home/pod-gateway
 To install the chart with the release name `pod-gateway`
 
 ```console
-helm install pod-gateway k8s-at-home/pod-gateway
+helm install pod-gateway bjw-s/pod-gateway
 ```
 
 ## Uninstalling the Chart
@@ -50,25 +50,25 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install pod-gateway \
   --set env.TZ="America/New York" \
-    k8s-at-home/pod-gateway
+    bjw-s/pod-gateway
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install pod-gateway k8s-at-home/pod-gateway -f values.yaml
+helm install pod-gateway bjw-s/pod-gateway -f values.yaml
 ```
 
 ## Custom configuration
 
-Please check [this guide](https://docs.k8s-at-home.com/guides/pod-gateway/)
+Please check [this guide](https://docs.bjw-s.com/guides/pod-gateway/)
 for the full instructions.
 
 You need to add `routed-gateway=true` to the namespaces with PODs you
@@ -83,7 +83,7 @@ Processed PODs will get their default gateway changed. DNS server will
 also be set to the gateway (at least the option `--keepDNS` is used).
 
 If you want to use the VPN please follow the
-[common chart VPN sidecar docummentation](https://github.com/k8s-at-home/library-charts/blob/main/charts/stable/common/values.yaml).
+[common chart VPN sidecar docummentation](https://github.com/bjw-s/library-charts/blob/main/charts/stable/common/values.yaml).
 If you want to test without VPN client you can
 set the `VPN_BLOCK_OTHER_TRAFFIC` to false.
 
@@ -95,7 +95,7 @@ certificates. It does not install it as dependency to avoid conflicts.
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -106,7 +106,7 @@ certificates. It does not install it as dependency to avoid conflicts.
 | addons.vpn.networkPolicy | object | `{"egress":[{"ports":[{"port":1194,"protocol":"UDP"}],"to":[{"ipBlock":{"cidr":"0.0.0.0/0"}}]},{"to":[{"ipBlock":{"cidr":"10.0.0.0/8"}}]}],"enabled":true}` |  wireguard: env: configFileSecret: openvpn |
 | clusterName | string | `"cluster.local"` | cluster name used to derive the gateway full name |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy of the gateway and inserted helper cotainers |
-| image.repository | string | `"ghcr.io/k8s-at-home/pod-gateway"` | image repository of the gateway and inserted helper containers |
+| image.repository | string | `"ghcr.io/bjw-s/pod-gateway"` | image repository of the gateway and inserted helper containers |
 | image.tag | string | chart.appVersion | image tag of the gateway and inserted helper containers |
 | publicPorts | string | `nil` | settings to expose ports, usually through a VPN provider. NOTE: if you change it you will need to manually restart the gateway POD |
 | routed_namespaces | list | `[]` | Namespaces that might contain routed PODs and therefore require a copy of the gneerated settings configmap. |
@@ -124,7 +124,7 @@ certificates. It does not install it as dependency to avoid conflicts.
 | webhook.gatewayDefault | bool | `true` | default behviour for new PODs in the evaluated namespace |
 | webhook.gatewayLabel | string | `"setGateway"` | label name to check when evaluating POD. If true the POD will get the gateway. If not set setGatewayDefault will apply. |
 | webhook.image.pullPolicy | string | `"IfNotPresent"` | image pullPolicy of the webhook |
-| webhook.image.repository | string | `"ghcr.io/k8s-at-home/gateway-admision-controller"` | image repository of the webhook |
+| webhook.image.repository | string | `"ghcr.io/bjw-s/gateway-admision-controller"` | image repository of the webhook |
 | webhook.image.tag | string | `"v3.5.0"` | image tag of the webhook |
 | webhook.namespaceSelector | object | `{"custom":{},"label":"routed-gateway","type":"label"}` | Selector for namespace. All pods in this namespace will get evaluated by the webhook. **IMPORTANT**: Do not select the namespace where the webhook is deployed to or you will get locking issues. |
 | webhook.replicas | int | `1` | number of webhook instances to deploy |
@@ -148,14 +148,14 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/pod-gateway?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/bjw-s/pod-gateway?modal=changelog)
 
 ## Support
 
-- See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
-- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
+- See the [Docs](https://docs.bjw-s.com/our-helm-charts/getting-started/)
+- Open an [issue](https://github.com/bjw-s/charts/issues/new/choose)
+- Ask a [question](https://github.com/bjw-s/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------
-Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/k8s-at-home/helm-docs/releases/v0.1.1)
+Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/bjw-s/helm-docs/releases/v0.1.1)

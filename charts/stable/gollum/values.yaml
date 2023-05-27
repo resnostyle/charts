@@ -2,7 +2,7 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 image:
@@ -39,7 +39,7 @@ gollum:
   gitBranch: master
   # -- Repository URL to pull (accepts access tokens)
   # Example: https://user:access-token@git.example.com/user/repo.git
-  gitUrl: https://github.com/k8s-at-home/charts.git
+  gitUrl: https://github.com/bjw-s/charts.git
   # -- Additional arguments for starting gollum
   additionalArgs:
     - --h1-title

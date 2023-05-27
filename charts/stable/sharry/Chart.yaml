@@ -6,14 +6,14 @@ name: sharry
 version: 5.4.2
 keywords:
   - file sharing
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sharry
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/sharry
 icon: https://github.com/eikek/sharry/blob/master/artwork/logo.svg?raw=true
 sources:
   - https://github.com/eikek/sharry
   - https://hub.docker.com/r/eikek0/sharry
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
+    email: bjw-s@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts

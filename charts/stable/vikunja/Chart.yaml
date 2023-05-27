@@ -10,7 +10,7 @@ keywords:
   - tasks
   - calendar
   - kanban
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vikunja
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/vikunja
 icon: https://s7.gifyu.com/images/GifCroppedTran.gif
 sources:
   - https://kolaente.dev/vikunja/api
@@ -20,7 +20,7 @@ sources:
   - https://vikunja.io/docs/
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
+    email: bjw-s@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts

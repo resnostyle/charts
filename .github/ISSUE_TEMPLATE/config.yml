@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
 - name: Discuss on Discord
-  url: https://discord.gg/k8s-at-home
+  url: https://discord.gg/bjw-s
   about: Join our Discord community
 - name: Ask a question
-  url: https://github.com/k8s-at-home/organization/discussions
+  url: https://github.com/bjw-s/organization/discussions
   about: Please ask and answer questions here.

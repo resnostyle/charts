@@ -8,14 +8,14 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - pyload
   - download
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/pyload
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/pyload
 icon: https://avatars.githubusercontent.com/u/3521496?s=200&v=4
 sources:
   - https://github.com/pyload/pyload
   - https://hub.docker.com/r/linuxserver/pyload
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
+    email: bjw-s@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts

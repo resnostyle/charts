@@ -9,14 +9,14 @@ keywords:
   - navidrome
   - music
   - streaming
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/navidrome
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/navidrome
 icon: https://github.com/deluan/navidrome/blob/master/ui/src/icons/android-icon-72x72.png?raw=true
 sources:
   - https://github.com/deluan/navidrome
   - https://hub.docker.com/r/deluan/navidrome
 maintainers:
   - name: auricom
-    email: k8s-at-home@xpander.eml.cc
+    email: bjw-s@xpander.eml.cc
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
