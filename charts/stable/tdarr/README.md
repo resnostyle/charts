@@ -18,7 +18,7 @@ Tdarr is a self hosted web-app for automating media library transcode/remux mana
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
 
 ## TL;DR
 

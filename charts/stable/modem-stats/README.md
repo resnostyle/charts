@@ -17,7 +17,7 @@ periodic cable modem data collection and save the results to InfluxDB
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
 
 ## TL;DR
 

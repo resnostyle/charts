@@ -16,7 +16,7 @@ maintainers:
     email: simon.caron@pm.me
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
+    repository: https://bjw-s.github.io/helm-charts
     version: 4.5.2
   - name: mariadb
     version: 11.5.7

@@ -16,7 +16,7 @@ The Intel GPU plugin facilitates offloading the processing of computation intens
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
 
 ## TL;DR
 

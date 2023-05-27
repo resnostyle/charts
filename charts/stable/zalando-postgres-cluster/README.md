@@ -16,7 +16,7 @@ Creates a postgres cluster using the Zalando Postgres operator and local storage
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
 
 ## TL;DR
 

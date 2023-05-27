@@ -20,7 +20,7 @@ Kubernetes: `>=1.19.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
 
 ## TL;DR
 

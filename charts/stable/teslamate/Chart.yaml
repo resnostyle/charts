@@ -14,7 +14,7 @@ sources:
   - https://github.com/k8s-at-home/charts/tree/master/charts/stable/teslamate
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
+    repository: https://bjw-s.github.io/helm-charts
     version: 4.5.2
   - name: postgresql
     version: 12.5.5
