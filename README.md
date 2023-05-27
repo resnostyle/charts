@@ -22,7 +22,7 @@ Once Helm is set up properly, add the repo as follows:
 
 ```console
 @todo Setup chart pushing
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add k8s-at-home https://bjw-s.github.io/helm-charts/
 ```
 
 You can then run `helm search repo k8s-at-home` to see the charts.
