@@ -9,7 +9,7 @@ keywords:
   - focalboard
   - kanban
   - project management
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/focalboard
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/focalboard
 icon: https://github.com/mattermost/focalboard/raw/main/webapp/static/favicon.svg
 sources:
   - https://www.focalboard.com/
@@ -20,9 +20,9 @@ maintainers:
     email: dennis.zhang.nrg@gmail.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

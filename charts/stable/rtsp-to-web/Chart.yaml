@@ -7,7 +7,7 @@ version: 2.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - rtsp-to-web
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/rtsp-to-web
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/rtsp-to-web
 icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/WebRTC_Logo.svg/440px-WebRTC_Logo.svg.png
 sources:
   - https://github.com/deepch/RTSPtoWeb/
@@ -16,9 +16,9 @@ maintainers:
     email: allen.porter@gmail.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

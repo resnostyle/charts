@@ -1,5 +1,5 @@
 env:
-  url: "http://ghost.k8s-at-home.com"
+  url: "http://ghost.bjw-s.com"
   database__connection__host: ghost-mariadb
 
 ingress:

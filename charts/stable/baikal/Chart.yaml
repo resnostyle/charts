@@ -11,7 +11,7 @@ keywords:
   - carddav
   - contacts
   - calendar
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/baikal
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/baikal
 icon: https://avatars.githubusercontent.com/u/28524376?s=400&v=4
 sources:
   - https://github.com/sabre-io/Baikal
@@ -21,8 +21,8 @@ maintainers:
     email: jeff@billimek.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: mariadb
     version: 11.5.7
     repository: https://charts.bitnami.com/bitnami
@@ -30,4 +30,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

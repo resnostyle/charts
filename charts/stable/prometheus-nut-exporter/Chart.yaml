@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - nut
   - prometheus
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prometheus-nut-exporter
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/prometheus-nut-exporter
 icon: https://www.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/125-512.png
 sources:
   - https://github.com/HON95/prometheus-nut-exporter
@@ -17,9 +17,9 @@ maintainers:
     email: jeff@billimek.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

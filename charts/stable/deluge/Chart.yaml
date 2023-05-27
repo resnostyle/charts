@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - deluge
   - torrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/deluge
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/deluge
 icon: https://avatars2.githubusercontent.com/u/6733935?v=3&s=200
 sources:
   - https://hub.docker.com/r/linuxserver/deluge/
@@ -18,9 +18,9 @@ maintainers:
     email: mark@markmcw.uk
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

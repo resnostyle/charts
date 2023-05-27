@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - overleaf
   - sharelatex
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/overleaf
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/overleaf
 icon: https://avatars.githubusercontent.com/u/6359919?s=200&v=4
 sources:
   - https://github.com/overleaf/overleaf
@@ -17,8 +17,8 @@ maintainers:
     email: me@bjw-s.dev
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: redis
     version: 17.11.3
     repository: https://charts.bitnami.com/bitnami

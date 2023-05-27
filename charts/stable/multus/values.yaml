@@ -2,7 +2,7 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 image:
@@ -16,7 +16,7 @@ image:
 cni:
   image:
     # -- CNI installer repostory
-    repository: ghcr.io/k8s-at-home/cni-plugins
+    repository: ghcr.io/bjw-s/cni-plugins
     # -- CNI installer tag
     tag: v0.9.1
     # -- CNI installer pull policy

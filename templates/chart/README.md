@@ -4,7 +4,7 @@
 
 ${CHARTNAME} helm package
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/bjw-s/charts/issues/new/choose)**
 
 ## Source Code
 
@@ -18,14 +18,14 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.0.0 |
+| https://bjw-s.github.io/helm-charts | common | 4.0.0 |
 
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add bjw-s https://bjw-s.github.io/helm-charts/
 helm repo update
-helm install ${CHARTNAME} k8s-at-home/${CHARTNAME}
+helm install ${CHARTNAME} bjw-s/${CHARTNAME}
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install ${CHARTNAME} k8s-at-home/${CHARTNAME}
 To install the chart with the release name `${CHARTNAME}`
 
 ```console
-helm install ${CHARTNAME} k8s-at-home/${CHARTNAME}
+helm install ${CHARTNAME} bjw-s/${CHARTNAME}
 ```
 
 ## Uninstalling the Chart
@@ -49,20 +49,20 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install ${CHARTNAME} \
   --set env.TZ="America/New York" \
-    k8s-at-home/${CHARTNAME}
+    bjw-s/${CHARTNAME}
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install ${CHARTNAME} k8s-at-home/${CHARTNAME} -f values.yaml
+helm install ${CHARTNAME} bjw-s/${CHARTNAME} -f values.yaml
 ```
 
 ## Custom configuration
@@ -71,7 +71,7 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -102,9 +102,9 @@ N/A
 
 ## Support
 
-- See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
-- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
+- See the [Docs](https://docs.bjw-s.com/our-helm-charts/getting-started/)
+- Open an [issue](https://github.com/bjw-s/charts/issues/new/choose)
+- Ask a [question](https://github.com/bjw-s/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------

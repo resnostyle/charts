@@ -4,7 +4,7 @@
 
 Gollum is a simple wiki system built on top of Git
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/bjw-s/charts/issues/new/choose)**
 
 ## Source Code
 
@@ -19,14 +19,14 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 1.5.0 |
 
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add bjw-s https://bjw-s.github.io/helm-charts/
 helm repo update
-helm install gollum k8s-at-home/gollum
+helm install gollum bjw-s/gollum
 ```
 
 ## Installing the Chart
@@ -34,7 +34,7 @@ helm install gollum k8s-at-home/gollum
 To install the chart with the release name `gollum`
 
 ```console
-helm install gollum k8s-at-home/gollum
+helm install gollum bjw-s/gollum
 ```
 
 ## Uninstalling the Chart
@@ -50,20 +50,20 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
 helm install gollum \
   --set env.TZ="America/New York" \
-    k8s-at-home/gollum
+    bjw-s/gollum
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install gollum k8s-at-home/gollum -f values.yaml
+helm install gollum bjw-s/gollum -f values.yaml
 ```
 
 ## Custom configuration
@@ -72,14 +72,14 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/bjw-s/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | gollum.additionalArgs | list | `["--h1-title"]` | Additional arguments for starting gollum |
 | gollum.config | string | `"# Push and pull on commit\nGollum::Hook.register(:post_commit, :hook_id) do |committer, sha1|\n     committer.wiki.repo.git.pull('origin', committer.wiki.ref)\n     committer.wiki.repo.git.push('origin', committer.wiki.ref)\nend\n"` | Gollum config.rb customizations [[ref]](https://github.com/gollum/gollum#config-file) |
 | gollum.gitBranch | string | `"master"` | Branch to pull |
-| gollum.gitUrl | string | `"https://github.com/k8s-at-home/charts.git"` | Repository URL to pull (accepts access tokens) Example: https://user:access-token@git.example.com/user/repo.git |
+| gollum.gitUrl | string | `"https://github.com/bjw-s/charts.git"` | Repository URL to pull (accepts access tokens) Example: https://user:access-token@git.example.com/user/repo.git |
 | gollum.syncCommand | string | `"git pull && git push"` | Command run during the sync cron |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"gollumorg/gollum"` | image repository |
@@ -98,7 +98,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded `common` chart dependency to version 1.5.0
 
 #### Fixed
 
@@ -106,14 +106,14 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/gollum?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/bjw-s/gollum?modal=changelog)
 
 ## Support
 
-- See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
-- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
+- See the [Docs](https://docs.bjw-s.com/our-helm-charts/getting-started/)
+- Open an [issue](https://github.com/bjw-s/charts/issues/new/choose)
+- Ask a [question](https://github.com/bjw-s/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------
-Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/k8s-at-home/helm-docs/releases/v0.1.1)
+Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/bjw-s/helm-docs/releases/v0.1.1)

@@ -4,7 +4,7 @@
 
 OpenTelemetry collector helm package
 
-**Homepage:** <https://github.com/k8s-at-home/charts/tree/master/charts/stable/otel-collector>
+**Homepage:** <https://github.com/bjw-s/charts/tree/master/charts/stable/otel-collector>
 
 ## Maintainers
 
@@ -22,7 +22,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://bjw-s.github.io/helm-charts | common | 4.3.0 |
 
 ## Values
 

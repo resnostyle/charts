@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - firefly-iii
   - firefly
-home: "https://github.com/k8s-at-home/charts/tree/master/charts/stable/firefly-iii"
+home: "https://github.com/bjw-s/charts/tree/master/charts/stable/firefly-iii"
 icon: "https://www.firefly-iii.org/assets/logo/color.png"
 sources:
   - https://github.com/firefly-iii/firefly-iii
@@ -17,8 +17,8 @@ maintainers:
     url: "https://github.com/bikram990"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: mariadb
     version: 11.5.7
     repository: https://charts.bitnami.com/bitnami

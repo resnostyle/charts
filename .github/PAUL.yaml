@@ -3,6 +3,7 @@ maintainers:
 - bjw-s
 - carpenike
 - onedr0p
+- renostyle
 labels: true
 empty_description_check:
   enabled: true

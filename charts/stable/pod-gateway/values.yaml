@@ -2,12 +2,12 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 image:
   # -- image repository of the gateway and inserted helper containers
-  repository: ghcr.io/k8s-at-home/pod-gateway
+  repository: ghcr.io/bjw-s/pod-gateway
   # -- image pull policy of the gateway and inserted helper cotainers
   pullPolicy: IfNotPresent
   # -- image tag of the gateway and inserted helper containers
@@ -107,7 +107,7 @@ addons:
 webhook:
   image:
     # -- image repository of the webhook
-    repository: ghcr.io/k8s-at-home/gateway-admision-controller
+    repository: ghcr.io/bjw-s/gateway-admision-controller
     # -- image pullPolicy of the webhook
     pullPolicy: IfNotPresent
     # -- image tag of the webhook

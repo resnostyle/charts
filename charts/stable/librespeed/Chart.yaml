@@ -8,20 +8,20 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - librespeed
   - speedtest
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/librespeed
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/librespeed
 icon: https://github.com/librespeed/speedtest/blob/master/.logo/icon_huge.png?raw=true
 sources:
   - https://github.com/librespeed/speedtest
   - https://hub.docker.com/r/linuxserver/librespeed
-  - https://github.com/k8s-at-home/charts/tree/master/charts/librespeed
+  - https://github.com/bjw-s/charts/tree/master/charts/librespeed
 maintainers:
   - name: mcmarkj
     email: mark@markmcw.uk
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

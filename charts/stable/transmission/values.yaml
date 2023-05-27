@@ -2,7 +2,7 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+# https://github.com/bjw-s/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
 # -- Use an initContainer to download the Flood web ui
@@ -25,13 +25,13 @@ initContainers: {}
 
 image:
   # -- image repository
-  repository: ghcr.io/k8s-at-home/transmission
+  repository: ghcr.io/bjw-s/transmission
   # -- image tag
   tag: v3.00
   # -- image pull policy
   pullPolicy: IfNotPresent
 
-# -- environment variables. See [image docs](https://github.com/k8s-at-home/container-images/tree/main/apps/transmission/settings.json.tmpl) for more details.
+# -- environment variables. See [image docs](https://github.com/bjw-s/container-images/tree/main/apps/transmission/settings.json.tmpl) for more details.
 # @default -- See below
 env:
   # -- Set the container timezone

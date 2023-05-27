@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - Vaultwarden
   - bitwardenrs
-home: "https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden"
+home: "https://github.com/bjw-s/charts/tree/master/charts/stable/vaultwarden"
 icon: "https://sesoodan.sirv.com/bitwarden_rs.png"
 sources:
   - https://github.com/dani-garcia/vaultwarden
@@ -17,8 +17,8 @@ maintainers:
     email: rwalt@pm.me
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: mariadb
     version: 11.5.7
     repository: https://charts.bitnami.com/bitnami
@@ -30,4 +30,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

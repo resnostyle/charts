@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - privatebin
   - pastebin
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/privatebin
+home: https://github.com/bjw-s/charts/tree/master/charts/incubator/privatebin
 icon: https://privatebin.info/theme/img/icon.svg
 sources:
   - https://github.com/PrivateBin/PrivateBin
@@ -18,8 +18,8 @@ maintainers:
     email: psych0d0g@users.noreply.github.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: postgresql
     version: 12.5.5
     repository: https://charts.bitnami.com/bitnami
@@ -27,4 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

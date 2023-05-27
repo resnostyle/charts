@@ -7,7 +7,7 @@ version: 8.3.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - crm
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/monica
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/monica
 icon: https://pbs.twimg.com/profile_images/951820722191720450/mtCNuIXX.jpg
 sources:
   - https://github.com/monicahq/monica
@@ -17,8 +17,8 @@ maintainers:
     email: jeff@billimek.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: mariadb
     version: 11.5.7
     repository: https://charts.bitnami.com/bitnami
@@ -26,4 +26,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

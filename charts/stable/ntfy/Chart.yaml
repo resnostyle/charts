@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - ntfy
   - notification
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/ntfy
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/ntfy
 icon: https://raw.githubusercontent.com/binwiederhier/ntfy/main/web/public/static/img/ntfy.png
 sources:
   - https://github.com/binwiederhier/ntfy
@@ -17,9 +17,9 @@ maintainers:
     email: gerald@geraldwu.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

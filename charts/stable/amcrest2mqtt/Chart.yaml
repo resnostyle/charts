@@ -7,8 +7,8 @@ version: 2.4.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - amcrest2mqtt
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/amcrest2mqtt
-icon: https://raw.githubusercontent.com/k8s-at-home/organization/main/logo/k8s-at-home-400.png
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/amcrest2mqtt
+icon: https://raw.githubusercontent.com/bjw-s/organization/main/logo/bjw-s-400.png
 sources:
   - https://github.com/dchesterton/amcrest2mqtt
 maintainers:
@@ -16,9 +16,9 @@ maintainers:
     email: me@bjw-s.dev
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

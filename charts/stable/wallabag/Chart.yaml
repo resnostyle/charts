@@ -7,7 +7,7 @@ version: 9.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - wallabag
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/wallabag
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/wallabag
 icon: "https://raw.githubusercontent.com/wallabag/logo/master/app-android/logo-app-android-icon-bg-white-512.png"
 sources:
   - https://github.com/wallabag/docker
@@ -17,8 +17,8 @@ maintainers:
     url: https://patricol.co/
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
   - name: redis
     version: 17.11.3
     repository: https://charts.bitnami.com/bitnami
@@ -34,4 +34,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0

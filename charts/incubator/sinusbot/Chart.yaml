@@ -7,7 +7,7 @@ version: 0.5.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - sinusbot
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sinusbot
+home: https://github.com/bjw-s/charts/tree/master/charts/stable/sinusbot
 icon: https://pbs.twimg.com/profile_images/613423613711122432/fFJZiB_t_400x400.png
 sources:
   - https://github.com/sinusbot/sinusbot-docker
@@ -16,9 +16,9 @@ maintainers:
     email: me@reitermark.us
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.5.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 1.5.0
