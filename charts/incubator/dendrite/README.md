@@ -20,15 +20,15 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 11.6.21 |
-| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | keyserver(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | clientapi(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | mediaapi(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | syncapi(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | roomserver(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | federationapi(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | userapi(common) | 4.5.2 |
-| https://bjw-s.github.io/helm-charts | appserviceapi(common) | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | keyserver(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | clientapi(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | mediaapi(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | syncapi(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | roomserver(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | federationapi(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | userapi(common) | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | appserviceapi(common) | 1.5.0 |
 | https://nats-io.github.io/k8s/helm/charts/ | nats | 0.17.1 |
 
 ## TL;DR

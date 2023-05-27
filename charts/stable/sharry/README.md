@@ -17,7 +17,7 @@ Sharry allows to share files with others in a simple way. It is a self-hosted we
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 1.5.0 |
 
 ## TL;DR
 
@@ -92,7 +92,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded `common` chart dependency to version 1.5.0
 
 #### Fixed
 

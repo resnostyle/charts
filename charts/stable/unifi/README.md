@@ -17,7 +17,7 @@ Ubiquiti Network's Unifi Controller
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | mongodb | 12.1.22 |
-| https://bjw-s.github.io/helm-charts | common | 4.5.2 |
+| https://bjw-s.github.io/helm-charts | common | 1.5.0 |
 
 ## TL;DR
 
@@ -154,7 +154,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Upgraded `common` chart dependency to version 1.5.0
 
 #### Fixed
 
