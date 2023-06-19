@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: version-1152df82
 name: lazylibrarian
 description: A Helm chart for deploying LazyLibrarian
-version: 7.4.2
+version: 7.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - lazylibrarian
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

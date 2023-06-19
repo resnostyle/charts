@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2022.5.4
 description: Home Assistant
 name: home-assistant
-version: 14.0.0
+version: 14.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
   - name: postgresql
     version: 12.5.8
     repository: https://charts.bitnami.com/bitnami

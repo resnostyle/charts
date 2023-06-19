@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.0.20210424
 description: Fast, modern, secure VPN tunnel
 name: wireguard
-version: 1.4.2
+version: 1.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - vpn
@@ -19,7 +19,7 @@ maintainers:
     email: j_r0dd@icloud.com
 dependencies:
   - name: common
-    version: 1.5.0
+    version: 1.5.1
     repository: https://bjw-s.github.io/helm-charts
 annotations:
   artifacthub.io/changes: |-

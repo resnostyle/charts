@@ -3,7 +3,7 @@ apiVersion: v2
 name: uptimerobot-prometheus
 description: Prometheus Exporter for the official uptimerobot CLI
 type: application
-version: 6.4.2
+version: 6.4.3
 appVersion: 0.0.1
 keywords:
   - uptimerobot
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

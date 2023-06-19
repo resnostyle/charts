@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.20.7
 description: Manage hardware resource allocation without a need for privileged containers
 name: smarter-device-manager
-version: 6.5.2
+version: 6.5.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - kubernetes
@@ -22,7 +22,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

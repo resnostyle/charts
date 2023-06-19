@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: version-2.5.201
 description: Make documentation a joy to write using Wiki.js's beautiful and intuitive interface!
 name: wikijs
-version: 6.4.2
+version: 6.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - wiki
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

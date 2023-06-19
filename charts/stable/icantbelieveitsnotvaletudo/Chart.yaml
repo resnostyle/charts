@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2021.2.1
 description: Create live map data from Valetudo powered robots
 name: icantbelieveitsnotvaletudo
-version: 5.4.2
+version: 5.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - icantbelieveitsnotvaletudo
@@ -23,7 +23,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
