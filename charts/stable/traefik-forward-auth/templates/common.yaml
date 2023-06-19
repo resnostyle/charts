@@ -26,4 +26,4 @@ env:
 {{- end -}}
 {{- $_ := mergeOverwrite .Values (include "traefik-forward-auth.harcodedValues" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

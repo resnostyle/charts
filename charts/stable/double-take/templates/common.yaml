@@ -14,4 +14,4 @@ volumeSpec:
 {{- $_ := set .Values.persistence "double-take-settings" (include "double-take.settingsVolume" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

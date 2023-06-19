@@ -8,4 +8,4 @@ env:
 {{- end -}}
 {{- $_ := merge .Values (include "paperless.harcodedValues" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

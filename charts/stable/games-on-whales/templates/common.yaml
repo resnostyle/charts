@@ -329,4 +329,4 @@ persistence:
 {{- $_ := mergeOverwrite .Values (include "games-on-whales.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

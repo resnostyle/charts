@@ -49,4 +49,4 @@ service:
 {{- $_ := mergeOverwrite .Values (include "zalando-postgres-cluster.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

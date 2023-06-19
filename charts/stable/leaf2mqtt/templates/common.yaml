@@ -18,4 +18,4 @@ probes:
 {{- $_ := mergeOverwrite .Values (include "leaf2mqtt.hardcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

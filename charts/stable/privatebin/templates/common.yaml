@@ -14,4 +14,4 @@
 {{- end -}}
 {{- $_ := mergeOverwrite .Values (include "privatebin.harcodedValues" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

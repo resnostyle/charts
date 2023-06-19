@@ -13,4 +13,4 @@ volumeSpec:
 {{- end -}}
 {{- $_ := set .Values.persistence "cryptpad-config" (include "cryptpad.configVolume" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

@@ -107,4 +107,4 @@ env:
 {{- $_ := mergeOverwrite .Values (include "firefly.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

@@ -17,4 +17,4 @@ service:
 {{- $_ := mergeOverwrite .Values (include "reverse-proxy.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

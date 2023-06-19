@@ -15,4 +15,4 @@ persistence:
 {{- end -}}
 {{- $_ := mergeOverwrite .Values (include "openhab.hardcodedValues" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

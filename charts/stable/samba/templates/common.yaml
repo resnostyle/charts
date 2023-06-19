@@ -37,4 +37,4 @@ probes:
 {{- $_ := mergeOverwrite .Values (include "samba.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

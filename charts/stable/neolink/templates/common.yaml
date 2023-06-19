@@ -17,4 +17,4 @@ persistence:
 {{- $_ := mergeOverwrite .Values (include "neolink.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}
