@@ -25,4 +25,4 @@
 {{- $_ := mergeOverwrite .Values (include "otel-collector.harcodedValues" . | fromYaml) -}}
 
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

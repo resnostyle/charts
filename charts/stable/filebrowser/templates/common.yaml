@@ -11,4 +11,4 @@ volumeSpec:
 {{- $_ := set .Values.persistence "filebrowser-config" (include "filebrowser.configVolume" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

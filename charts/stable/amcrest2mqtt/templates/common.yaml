@@ -22,4 +22,4 @@ probes:
 {{- $_ := mergeOverwrite .Values (include "amcrest2mqtt.hardcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

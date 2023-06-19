@@ -27,4 +27,4 @@ persistence:
 {{- end -}}
 {{- $_ := mergeOverwrite .Values (include "onedrive.hardcodedValues" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

@@ -24,7 +24,7 @@
   {{- $_ := set .Values.persistence "dendrite-key" (include "dendrite.keyVolume" . | fromYaml) -}}
   {{- $_ := set .Values.persistence "dendrite-config" (include "dendrite.configVolume" . | fromYaml) -}}
   {{- $_ := set .Values.persistence "dendrite-tls" (include "dendrite.tlsVolume" . | fromYaml) -}}
-  {{ include "common.all" . }}
+  {{ include "bjw-s.common.loader.all" . }}
 {{- end }}
 {{- define "dendrite.hardcodedValues" -}}
 probes:

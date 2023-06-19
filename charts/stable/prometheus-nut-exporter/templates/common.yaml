@@ -10,4 +10,4 @@ env:
 {{- $_ := mergeOverwrite .Values (include "prometheus-nut-exporter.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

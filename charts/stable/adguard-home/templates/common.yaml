@@ -14,4 +14,4 @@ volumeSpec:
 {{- $_ := set .Values.persistence "adguard-home-config" (include "adguard-home.configVolume" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}
