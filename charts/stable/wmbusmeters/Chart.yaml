@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.4.1
 description: Wmbusmeters receives and decodes C1,T1 or S1 telegrams (using the wireless mbus protocol) to acquire utility meter readings.
 name: wmbusmeters
-version: 1.4.2
+version: 1.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - wmbusmeters
@@ -16,7 +16,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

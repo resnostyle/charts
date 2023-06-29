@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v3.00
 description: Transmission is a cross-platform BitTorrent client
 name: transmission
-version: 8.4.3
+version: 8.4.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - transmission
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

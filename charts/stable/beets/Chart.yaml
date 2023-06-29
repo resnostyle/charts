@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.5.0
 description: beets helm package
 name: beets
-version: 1.4.2
+version: 1.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - beets
@@ -18,7 +18,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

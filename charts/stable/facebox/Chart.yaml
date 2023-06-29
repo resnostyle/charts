@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.0.0
 description: Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image.
 name: facebox
-version: 1.2.2
+version: 1.2.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - facebox
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.0.7
 description: Take control over your live stream video by running it yourself. Streaming + chat out of the box.
 name: owncast
-version: 3.4.2
+version: 3.4.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - owncast
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

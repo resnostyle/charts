@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.28.0.5999-97678ded3
 description: Plex Media Server
 name: plex
-version: 6.4.3
+version: 6.4.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - plex
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
