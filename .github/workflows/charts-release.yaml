@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
     paths:
       - "charts/**"
 
@@ -18,8 +18,8 @@ jobs:
         uses: tibdex/github-app-token@v1
         id: generate-token
         with:
-          app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
-          private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
+          app_id: ${{ secrets.RESNOSTYLE_APP_ID }}
+          private_key: ${{ secrets.RESNOSTYLE_APP_PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -64,9 +64,9 @@ jobs:
         with:
           file_pattern: charts/**/
           commit_message: "chore: Auto-update chart README [skip ci]"
-          commit_user_name: bjw-s[bot]
-          commit_user_email: bjw-s[bot]@users.noreply.github.com
-          commit_author: bjw-s[bot] <bjw-s[bot]@users.noreply.github.com>
+          commit_user_name: charter[bot]
+          commit_user_email: charter[bot]@users.noreply.github.com
+          commit_author: charter[bot] <charter[bot]@users.noreply.github.com>
 
       - name: Save commit hash
         id: save-commit-hash
@@ -86,14 +86,14 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "bjw-s[bot]"
-          git config user.email "bjw-s[bot]@users.noreply.github.com"
+          git config user.name "charter[bot]"
+          git config user.email "chater[bot]@users.noreply.github.com"
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
         with:
           charts_dir: charts/*
-          charts_repo_url: https://bjw-s.github.io/helm-charts/
+          charts_repo_url: https://resnostyle.github.io/helm-charts/
         env:
           CR_TOKEN: "${{ steps.generate-token.outputs.token }}"
           CR_SKIP_EXISTING: "true"
@@ -108,14 +108,14 @@ jobs:
         uses: tibdex/github-app-token@v1
         id: generate-token
         with:
-          app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
-          private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
+          app_id: ${{ secrets.RESNOSTYLE_APP_ID }}
+          private_key: ${{ secrets.RESNOSTYLE_APP_PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          ref: master
+          ref: main
           fetch-depth: 0
 
       - name: Install yq
@@ -132,7 +132,7 @@ jobs:
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]
-          commit_user_name: bjw-s[bot]
-          commit_user_email: bjw-s[bot]@users.noreply.github.com
-          commit_author: bjw-s[bot] <bjw-s[bot]@users.noreply.github.com>
+          commit_user_name: charter[bot]
+          commit_user_email: charter[bot]@users.noreply.github.com
+          commit_author: charter[bot] <bjw-s[bot]@users.noreply.github.com>
           file_pattern: charts/README.md
