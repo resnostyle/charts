@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.7.1
 description: A web-based collaborative LaTeX editor
 name: overleaf
-version: 6.1.2
+version: 6.2.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - overleaf
@@ -20,11 +20,11 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: redis
-    version: 17.11.8
+    version: 17.17.1
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
   - name: mongodb
-    version: 13.15.5
+    version: 13.18.4
     repository: https://charts.bitnami.com/bitnami
     condition: mongodb.enabled
 annotations:

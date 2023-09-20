@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.90.74
 description: Status page for monitoring your websites and applications
 name: statping
-version: 7.0.2
+version: 7.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - statping
@@ -23,7 +23,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: postgresql
-    version: 12.5.9
+    version: 12.12.4
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:

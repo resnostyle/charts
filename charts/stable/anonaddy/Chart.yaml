@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.12.3
 description: "Anonaddy: Anonymous email forwarding"
 name: anonaddy
-version: 6.2.2
+version: 6.3.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - anonaddy
@@ -23,7 +23,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: redis
-    version: 17.11.8
+    version: 17.17.1
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
