@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.12.06
 description: deCONZ is an easy to use control software, with which you can set up and control Zigbee networks of any size without further programming effort.
 name: deconz
-version: 6.5.3
+version: 7.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - deconz
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

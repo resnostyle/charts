@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v21.1
 description: NZBGet is a Usenet downloader client
 name: nzbget
-version: 12.4.3
+version: 13.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - nzbget
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
