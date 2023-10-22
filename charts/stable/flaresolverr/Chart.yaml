@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.2.8
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 name: flaresolverr
-version: 5.4.3
+version: 6.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - flaresolverr
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

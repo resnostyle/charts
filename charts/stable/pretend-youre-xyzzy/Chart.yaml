@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: "4"
 description: pretend-youre-xyzzy, a cards against humanity clone
 name: pretend-youre-xyzzy
-version: 3.4.3
+version: 4.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - pretend-youre-xyzzy
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.9.7
 description: This application runs as a daemon on your download host. It checks for completed downloads and extracts them so Radarr, Lidarr, Sonarr, and Readarr may import them.
 name: unpackerr
-version: 5.4.3
+version: 6.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - unpackerr
@@ -22,7 +22,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

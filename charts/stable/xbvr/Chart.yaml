@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.3.17
 description: xbvr helm package
 name: xbvr
-version: 1.4.3
+version: 2.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - xbvr
@@ -17,7 +17,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

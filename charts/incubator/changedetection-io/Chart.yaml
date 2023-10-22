@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: "0.39.4"
 description: changedetection-io helm package
 name: changedetection-io
-version: 1.5.3
+version: 2.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - changedetection.io
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

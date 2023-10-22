@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.4.1-2
 description: Index and stream music using apache-musicindex and m3u playlists
 name: apache-musicindex
-version: 2.4.3
+version: 3.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - apache-musicindex
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.0.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
