@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.7.1
 description: A web-based collaborative LaTeX editor
 name: overleaf
-version: 7.0.0
+version: 7.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - overleaf
@@ -24,7 +24,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
   - name: mongodb
-    version: 13.18.4
+    version: 13.18.5
     repository: https://charts.bitnami.com/bitnami
     condition: mongodb.enabled
 annotations:
