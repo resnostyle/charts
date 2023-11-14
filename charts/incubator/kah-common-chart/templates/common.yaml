@@ -1,2 +1,0 @@
----
-{{ include "bjw-s.common.loader.all" . }}
