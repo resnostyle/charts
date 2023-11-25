@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: "220629-jammy"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism
-version: 8.0.0
+version: 9.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - photos
@@ -23,7 +23,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 2.0.3
   - name: mariadb
-    version: 11.5.7
+    version: 14.1.4
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
