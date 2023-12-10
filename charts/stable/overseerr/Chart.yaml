@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.26.1
 description: Overseerr is a free and open source software application for managing requests for your media library. It integrates with your existing services such as Sonarr, Radarr and Plex!
 name: overseerr
-version: 6.0.0
+version: 6.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - overseerr
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

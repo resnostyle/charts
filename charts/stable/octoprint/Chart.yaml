@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.6.1
 description: OctoPrint is the snappy web interface for your 3D printer
 name: octoprint
-version: 7.0.0
+version: 7.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - octoprint
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

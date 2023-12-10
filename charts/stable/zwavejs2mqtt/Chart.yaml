@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 5.0.2
 description: Fully configurable Zwave to MQTT Gateway and Control Panel
 name: zwavejs2mqtt
-version: 6.0.0
+version: 6.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - zwave
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

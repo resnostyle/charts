@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.8.0
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 12.0.1
+version: 12.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - paperless
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
   - name: postgresql
     version: 12.12.10
     repository: https://charts.bitnami.com/bitnami

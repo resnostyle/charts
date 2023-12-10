@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.3.0.1710
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr
-version: 2.0.0
+version: 2.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - prowlarr
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

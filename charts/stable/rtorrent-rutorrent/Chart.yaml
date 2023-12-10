@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 3.10-0.9.8-0.13.8
 description: ruTorrent is a popular rtorrent client with a webui for ease of use.
 name: rtorrent-rutorrent
-version: 2.0.0
+version: 2.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - rutorrent
@@ -18,7 +18,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

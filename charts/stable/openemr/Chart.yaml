@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 6.1.0
 description: OpenEMR is the most popular open source electronic health records and medical practice management solution.
 name: openemr
-version: 7.0.0
+version: 7.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - openemr
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
   - name: mariadb
     version: 14.1.1
     repository: https://charts.bitnami.com/bitnami
