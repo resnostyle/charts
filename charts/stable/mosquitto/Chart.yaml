@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.0.14
 description: Eclipse Mosquitto - An open source MQTT broker
 name: mosquitto
-version: 5.0.0
+version: 5.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - mosquitto
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

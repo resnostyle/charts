@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: "2022.5.28-r206.a752a63e0e"
 description: "Deemix is a Deezer Download Manager"
 name: deemix
-version: 2.0.0
+version: 2.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - deemix
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: '4.3'
 description: Omada enables the network administrators to monitor and manage all the Omada products in the network with a centralized management platform.
 name: omada-controller
-version: 5.0.0
+version: 5.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - omada-controller
@@ -18,7 +18,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

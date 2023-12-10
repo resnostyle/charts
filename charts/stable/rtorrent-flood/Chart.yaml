@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: latest
 description: rTorrent is a stable, high-performance and low resource consumption BitTorrent client.
 name: rtorrent-flood
-version: 10.0.0
+version: 10.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - rtorrent
@@ -22,7 +22,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed

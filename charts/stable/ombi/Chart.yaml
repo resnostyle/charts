@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 4.16.12
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
 name: ombi
-version: 12.0.0
+version: 12.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - ombi
@@ -23,7 +23,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 2.0.3
+    version: 2.4.0
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
