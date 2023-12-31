@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.5.2
 description: Maddy Mail Server
 name: maddy
-version: 5.0.1
+version: 6.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - maddy
@@ -21,7 +21,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 2.0.3
   - name: postgresql
-    version: 12.12.10
+    version: 13.2.27
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
