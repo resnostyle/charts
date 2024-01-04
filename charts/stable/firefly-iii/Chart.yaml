@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: version-5.6.14
 description: "Firefly III: a personal finances manager"
 name: firefly-iii
-version: 3.0.1
+version: 4.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - firefly-iii
@@ -28,7 +28,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: redis
-    version: 17.17.1
+    version: 18.6.2
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
